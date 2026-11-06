@@ -129,6 +129,33 @@ export default function Home() {
         </div>
       </section>
 
+      <section className="bg-pink-soft/50 py-16 md:py-20">
+        <div className="mx-auto max-w-4xl px-6 text-center md:px-10 lg:max-w-5xl">
+          <h2 className="font-display text-3xl font-normal tracking-tight text-plum md:text-4xl">
+            Divorce Coaching as a Recognized Dispute-Resolution Process
+          </h2>
+          <blockquote className="mx-auto mt-6 max-w-3xl border-l-2 border-plum/30 pl-6 text-left font-body text-sm font-light italic leading-relaxed text-ink md:text-base">
+            &ldquo;Divorce coaching is a flexible, goal-oriented process
+            designed to support, motivate, and guide people going through
+            divorce to help them make the best possible decisions for their
+            future, based on their particular interests, needs, and
+            concerns.&rdquo;
+          </blockquote>
+          <p className="mt-6 font-body text-sm font-light text-ink md:text-base">
+            Source:{" "}
+            <a
+              href="https://www.americanbar.org/groups/dispute_resolution/resources/overview/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="font-medium text-plum underline-offset-2 hover:underline"
+            >
+              American Bar Association Section of Dispute Resolution, Dispute
+              Resolution Overview
+            </a>
+          </p>
+        </div>
+      </section>
+
       <section className="bg-pink-soft py-16 md:py-20">
         <div className="mx-auto max-w-4xl px-6 md:px-10">
           <h2 className="text-center font-display text-3xl font-normal tracking-tight text-plum md:text-4xl">
