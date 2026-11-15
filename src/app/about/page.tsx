@@ -8,80 +8,8 @@ import { katePinkBg } from "@/lib/katePinkBg";
 export const metadata: Metadata = {
   title: "About",
   description:
-    "Alecia Pazant, Certified Divorce Coach® — structured, steady, attorney-aligned divorce support serving clients nationwide, with focused support in Northern Virginia and Beaufort, SC.",
+    "Alecia Pazant, Certified Divorce Coach® — structured, steady, attorney-aligned divorce support providing virtual divorce coaching services to clients nationwide.",
 };
-
-const clientsReceive = [
-  "decision-support tools that clarify options",
-  "emotional-regulation strategies that reduce reactivity",
-  "structured communication support that prevents escalation",
-  "mediation and attorney-meeting preparation that improves efficiency",
-  "stability during transitions that supports children and co-parenting",
-];
-
-const regions = [
-  {
-    name: "Northern Virginia",
-    paragraphs: [
-      "Northern Virginia’s family-law ecosystem is uniquely suited to structured, attorney-aligned divorce coaching. High-stakes cases, complex family dynamics, and attorney-driven processes benefit from clients who are prepared, steady, and able to make informed decisions.",
-      "Clients in Loudoun, Fairfax, Arlington, Alexandria, and Prince William counties consistently benefit from this practice’s executive-caliber approach.",
-    ],
-  },
-  {
-    name: "Beaufort, South Carolina",
-    paragraphs: [
-      "The Beaufort region — including military families and long-standing community networks — often faces transitions that require clarity, steadiness, and trauma-informed support. My work in this region reflects both professional alignment and personal heritage, offering clients a grounded partner during periods of change.",
-    ],
-  },
-];
-
-const approachTraits = [
-  "steady",
-  "structured",
-  "clarifying",
-  "non-reactive",
-  "deeply supportive",
-  "aligned with attorney strategy",
-];
-
-const howISupport = [
-  "prepare for mediation",
-  "organize documents and priorities",
-  "clarify questions before attorney meetings",
-  "reduce conflict escalation",
-  "communicate with structure",
-  "make decisions aligned with long-term goals",
-  "stay emotionally steady during difficult moments",
-];
-
-const regionalExpertise = [
-  {
-    name: "Northern Virginia",
-    detail:
-      "where attorney ecosystems and case complexity benefit most from structured decision support",
-  },
-  {
-    name: "Beaufort, South Carolina",
-    detail:
-      "where trauma-informed stability and heritage-aligned trust strengthen client outcomes",
-  },
-];
-
-function BulletList({ items }: { items: string[] }) {
-  return (
-    <ul className="mt-6 space-y-3 font-body text-base font-light leading-relaxed text-ink md:text-lg">
-      {items.map((item) => (
-        <li key={item} className="flex gap-3">
-          <span
-            aria-hidden
-            className="mt-2.5 h-1.5 w-1.5 shrink-0 rounded-full bg-plum"
-          />
-          <span>{item}</span>
-        </li>
-      ))}
-    </ul>
-  );
-}
 
 export default function AboutPage() {
   return (
@@ -119,18 +47,6 @@ export default function AboutPage() {
               reactivity.
             </p>
           </div>
-        </div>
-      </section>
-
-      {/* Practice intro */}
-      <section className="bg-white py-14 md:py-16">
-        <div className="mx-auto max-w-3xl px-6 text-center md:max-w-4xl md:px-10">
-          <p className="font-body text-base font-light leading-relaxed text-ink md:text-lg">
-            I serve clients virtually across the United States, with focused
-            support in Northern Virginia and the Beaufort, South Carolina
-            region, where attorney ecosystems and client needs align most
-            strongly with this practice’s executive-caliber approach.
-          </p>
         </div>
       </section>
 
@@ -194,170 +110,94 @@ export default function AboutPage() {
           </h2>
           <div className="mt-5 space-y-4 font-body text-base font-light leading-relaxed text-ink md:text-lg">
             <p>
-              Long before becoming a Certified Divorce Coach®, I spent my
-              career helping leaders and organizations navigate high-stakes
-              decisions, competing priorities, uncertainty, and change.
+              Divorce is often described as an emotional journey, but it is also
+              a period filled with important decisions that can shape the future
+              for years to come. Questions about family, finances, housing,
+              co-parenting, and personal identity often arise simultaneously,
+              making it difficult to know where to focus and how to move forward
+              with confidence.
             </p>
             <p>
-              Drawing on a career in organizational effectiveness, governance,
-              and strategic decision support, I help clients bring structure to
-              one of the most complex decision-making periods of their lives.
+              Before becoming a Certified Divorce Coach®, I spent my career
+              helping leaders and organizations navigate complex decisions,
+              competing priorities, uncertainty, and significant change. Drawing
+              on a professional background in organizational effectiveness,
+              governance, and strategic decision support, I help clients bring
+              structure, clarity, and thoughtful decision-making to one of the
+              most challenging transitions of their lives.
             </p>
             <p>
-              The same principles used to support executive decision-making can
-              help individuals organize information, evaluate options,
-              communicate effectively, and move forward with confidence during
-              divorce.
+              My understanding of divorce is informed not only by professional
+              experience but also by personal experience. Having experienced
+              divorce&apos;s impact both as a child and later as an adult, I
+              developed a deep appreciation for how profoundly life transitions
+              can affect individuals, families, and future aspirations. I
+              understand that beyond the legal process are deeply personal
+              questions about relationships, priorities, stability, and what
+              comes next.
+            </p>
+            <p>
+              Those experiences, combined with decades of helping people
+              navigate change and complexity, inspired me to establish Insightful
+              Divorce Coaching™. My role is not to tell clients what decisions to
+              make, but to provide the structure, perspective, and support that
+              help them organize information, evaluate options, prepare for
+              important conversations, and move forward with greater clarity,
+              confidence, and intention.
+            </p>
+            <p>
+              Insightful Divorce Coaching™ is built on a simple belief: better
+              decisions create better outcomes, both during divorce and beyond
+              it.
             </p>
           </div>
         </div>
       </section>
 
-      {/* Why This Practice Exists */}
+      {/* Why Insightful Divorce Coaching Exists */}
       <section className="bg-pink py-14 md:py-16">
-        <div className="mx-auto max-w-3xl px-6 md:max-w-4xl md:px-10">
-          <h2 className="text-center font-display font-normal text-3xl tracking-tight text-plum md:text-4xl">
-            Why This Practice Exists
-          </h2>
-          <p className="mt-5 text-center font-body text-base font-light leading-relaxed text-ink md:text-lg">
-            Divorce often overwhelms even the most capable individuals.
-            High-stress moments can derail communication, delay decisions, and
-            increase conflict. Attorneys frequently report that the greatest
-            barriers to progress are not legal issues — but emotional
-            reactivity, disorganization, and decision fatigue.
-          </p>
-          <p className="mt-4 text-center font-display text-xl font-normal tracking-tight text-plum md:text-2xl">
-            Insightful Divorce Coaching™ exists to close that gap.
-          </p>
-          <div className="mx-auto mt-8 max-w-2xl rounded-2xl bg-white px-6 py-8 md:px-10">
-            <p className="font-label text-xs font-normal uppercase tracking-[0.6px] text-plum">
-              Clients receive:
-            </p>
-            <BulletList items={clientsReceive} />
-          </div>
-          <p className="mt-8 text-center font-body text-base font-medium leading-relaxed text-plum md:text-lg">
-            This is the work that strengthens legal outcomes.
-          </p>
-        </div>
-      </section>
-
-      {/* Regional Focus */}
-      <section className="bg-white py-14 md:py-16">
-        <div className="mx-auto max-w-6xl px-6 md:px-10">
-          <h2 className="text-center font-display font-normal text-3xl tracking-tight text-plum md:text-4xl">
-            Regional Focus: Where This Work Has the Greatest Impact
-          </h2>
-          <div className="mt-10 grid gap-6 md:grid-cols-2 md:gap-8">
-            {regions.map((region) => (
-              <div
-                key={region.name}
-                className="rounded-2xl bg-pink-soft px-7 py-8"
-              >
-                <h3 className="font-display font-normal text-xl leading-snug text-plum md:text-2xl">
-                  {region.name}
-                </h3>
-                <div className="mt-4 space-y-3 font-body text-base font-light leading-relaxed text-ink">
-                  {region.paragraphs.map((paragraph) => (
-                    <p key={paragraph}>{paragraph}</p>
-                  ))}
-                </div>
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
-
-      {/* My Background */}
-      <section className="relative bg-white">
-        <div
-          aria-hidden
-          className="absolute inset-y-0 left-0 hidden w-[28%] bg-pink md:block"
-        />
-        <div className="relative mx-auto grid max-w-6xl items-center gap-10 px-6 py-14 md:grid-cols-[0.9fr_1.1fr] md:gap-14 md:px-10 md:py-16">
-          <div className="relative mx-auto aspect-[3/4] w-full max-w-sm overflow-hidden rounded-[2rem] md:mx-0 md:max-w-none">
-            <Image
-              src={assetPath("/about-value.jpg")}
-              alt="Organized planning and clear next steps"
-              fill
-              className="object-cover"
-              sizes="(max-width: 768px) 80vw, 35vw"
-            />
-          </div>
-          <div>
-            <h2 className="font-display font-normal text-3xl tracking-tight text-plum md:text-4xl">
-              My Background
-            </h2>
-            <p className="mt-5 font-body text-base font-light leading-relaxed text-ink md:text-lg">
-              My professional foundation is in organizational effectiveness,
-              structured decision-making, and communication systems —
-              disciplines that translate directly into divorce coaching. I bring
-              a calm operational presence, a clarity-driven mindset, and the
-              ability to help clients think clearly during high-stakes moments.
-            </p>
-            <p className="mt-5 font-label text-xs font-normal uppercase tracking-[0.6px] text-plum">
-              Clients describe my approach as:
-            </p>
-            <BulletList items={approachTraits} />
-            <p className="mt-6 font-body text-base font-medium leading-relaxed text-plum md:text-lg">
-              This is executive-caliber coaching designed for one of life’s most
-              consequential transitions.
-            </p>
-          </div>
-        </div>
-      </section>
-
-      {/* How I Support You */}
-      <section className="bg-pink py-14 md:py-16">
-        <div className="mx-auto max-w-3xl px-6 md:px-10">
-          <h2 className="text-center font-display font-normal text-3xl tracking-tight text-plum md:text-4xl">
-            How I Support You
-          </h2>
-          <div className="mx-auto mt-8 max-w-2xl rounded-2xl bg-white px-6 py-8 md:px-10">
-            <p className="font-label text-xs font-normal uppercase tracking-[0.6px] text-plum">
-              Clients work with me to:
-            </p>
-            <BulletList items={howISupport} />
-          </div>
-          <p className="mt-8 text-center font-body text-base font-light leading-relaxed text-ink md:text-lg">
-            The result is a more efficient legal process, clearer
-            communication, and decisions made with confidence rather than
-            pressure.
-          </p>
-        </div>
-      </section>
-
-      {/* Serving Clients Nationwide */}
-      <section className="bg-white py-14 md:py-16">
         <div className="mx-auto max-w-3xl px-6 text-center md:max-w-4xl md:px-10">
           <h2 className="font-display font-normal text-3xl tracking-tight text-plum md:text-4xl">
-            Serving Clients Nationwide — With Intentional Regional Expertise
+            Why Insightful Divorce Coaching™ Exists
           </h2>
-          <p className="mt-5 font-body text-base font-light leading-relaxed text-ink md:text-lg">
-            While I serve clients virtually across the United States, my
-            practice is intentionally focused on:
-          </p>
-          <div className="mt-8 grid gap-5 text-left sm:grid-cols-2">
-            {regionalExpertise.map((item) => (
-              <div key={item.name} className="rounded-2xl bg-pink-soft px-6 py-6">
-                <h3 className="font-display font-normal text-lg leading-snug text-plum md:text-xl">
-                  {item.name}
-                </h3>
-                <p className="mt-2 text-sm leading-relaxed text-ink-soft md:text-base">
-                  {item.detail}
-                </p>
-              </div>
-            ))}
+          <div className="mt-5 space-y-4 font-body text-base font-light leading-relaxed text-ink md:text-lg">
+            <p>
+              Divorce can overwhelm even the most capable individuals. Important
+              decisions often must be made while navigating stress, uncertainty,
+              grief, conflict, and competing priorities. During these periods,
+              communication can break down, decision fatigue can set in, and
+              progress can stall.
+            </p>
+            <p>
+              Insightful Divorce Coaching™ exists to provide the practical
+              support that helps clients move forward more effectively.
+            </p>
+            <p>
+              When clients are more organized, informed, and emotionally
+              grounded, they are often better positioned to work productively
+              with the professionals supporting their divorce process and to
+              make decisions aligned with their long-term goals.
+            </p>
+            <p>
+              If you are navigating divorce and seeking a thoughtful, structured
+              approach to decision-making, communication, and future planning, I
+              invite you to schedule a{" "}
+              <Link
+                href="/contact"
+                className="font-medium text-plum underline underline-offset-4 hover:text-gold-deep"
+              >
+                Discovery Session
+              </Link>{" "}
+              to learn how Insightful Divorce Coaching™ can support your goals.
+            </p>
           </div>
-          <p className="mt-8 font-body text-base font-light leading-relaxed text-ink md:text-lg">
-            This dual-market strategy ensures depth, credibility, and
-            meaningful impact.
-          </p>
         </div>
       </section>
 
       {/* CTA */}
-      <section className="bg-pink py-14 md:py-16">
-        <div className="mx-auto max-w-3xl px-6 text-center md:px-10">
+      <section className="relative overflow-hidden py-14 md:py-16" style={katePinkBg}>
+        <HeroPattern />
+        <div className="relative mx-auto max-w-3xl px-6 text-center md:px-10">
           <h2 className="font-display font-normal text-3xl tracking-tight text-plum md:text-4xl">
             Ready to Move Forward with Clarity?
           </h2>

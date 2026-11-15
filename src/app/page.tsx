@@ -10,19 +10,6 @@ const attorneyReasons = [
   "attorney time is used more efficiently",
 ];
 
-const regions = [
-  {
-    name: "Northern Virginia",
-    label: "Primary Market",
-    body: "Supporting clients in Loudoun, Fairfax, Arlington, Alexandria, and Prince William — where high-stakes cases and attorney-driven processes benefit from structured decision support.",
-  },
-  {
-    name: "Beaufort, South Carolina",
-    label: "Secondary Market",
-    body: "Providing trauma-informed, stability-focused support for families navigating transition, including military families and clients seeking grounded guidance during periods of change.",
-  },
-];
-
 const services = [
   {
     title: "Divorce Decision Readiness & Legal-Process Preparation",
@@ -77,8 +64,7 @@ export default function Home() {
             legal outcomes.
           </h1>
           <p className="home-hero__body animate-fade-up-delay-2 mx-auto max-w-2xl font-body font-light leading-relaxed text-ink">
-            Serving clients virtually across the U.S., with focused support in
-            Northern Virginia and the Beaufort, SC region.
+            Providing virtual divorce coaching services to clients nationwide.
           </p>
           <div className="home-hero__actions animate-fade-up-delay-2 flex flex-wrap items-center justify-center gap-3 md:gap-4">
             <Link
@@ -180,37 +166,6 @@ export default function Home() {
             executive-caliber decision support designed to improve legal
             outcomes.
           </p>
-        </div>
-      </section>
-
-      <section className="bg-white py-16 md:py-20">
-        <div className="mx-auto max-w-5xl px-6 md:px-10">
-          <h2 className="text-center font-display text-3xl font-normal tracking-tight text-plum md:text-4xl">
-            Focused Regional Support
-          </h2>
-          <p className="mx-auto mt-5 max-w-3xl text-center font-body text-sm font-light leading-relaxed text-ink md:text-base">
-            Although services are delivered virtually nationwide, this practice
-            is intentionally focused on two regions where structured,
-            attorney-aligned support has the greatest impact:
-          </p>
-          <div className="mt-10 grid gap-6 md:grid-cols-2 md:gap-8">
-            {regions.map((region) => (
-              <div
-                key={region.name}
-                className="rounded-3xl bg-pink-soft px-7 py-8 text-center"
-              >
-                <h3 className="font-display text-[1.35rem] font-normal leading-snug tracking-tight text-plum md:text-[1.6rem]">
-                  {region.name}
-                </h3>
-                <p className="mt-1 font-label text-xs font-normal uppercase tracking-[0.6px] text-gold">
-                  {region.label}
-                </p>
-                <p className="mt-4 font-body text-[0.9375rem] font-light leading-relaxed text-ink">
-                  {region.body}
-                </p>
-              </div>
-            ))}
-          </div>
         </div>
       </section>
 

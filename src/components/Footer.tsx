@@ -22,7 +22,7 @@ export default function Footer() {
               Structured. Steady. Attorney-Aligned.
             </p>
             <p className="mt-3 max-w-sm font-body text-sm font-light leading-relaxed text-nav-text/70">
-              Certified Divorce Coach® · Serving clients virtually across the U.S., with focused support in Northern Virginia and Beaufort, SC
+              Certified Divorce Coach® · Providing virtual divorce coaching services to clients nationwide.
             </p>
           </div>
         </div>

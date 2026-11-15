@@ -112,19 +112,6 @@ const whyDiscoverySession = [
   "provide a fee recommendation that reflects your actual needs",
 ];
 
-const regions = [
-  {
-    name: "Northern Virginia",
-    label: "Primary Market",
-    body: "Supporting clients in Loudoun, Fairfax, Arlington, Alexandria, and Prince William — where high-stakes cases and attorney-driven processes benefit from structured decision support.",
-  },
-  {
-    name: "Beaufort, South Carolina",
-    label: "Secondary Market",
-    body: "Providing trauma-informed stability and heritage-aligned support for families navigating transition, including military families.",
-  },
-];
-
 function BulletList({ items }: { items: string[] }) {
   return (
     <ul className="mt-3 space-y-2.5">
@@ -162,8 +149,7 @@ export default function ServicesPage() {
             outcomes.
           </p>
           <p className="mx-auto mt-3 max-w-[48rem] font-body text-[0.95rem] font-light leading-[1.6] text-ink-soft md:text-[1rem]">
-            Serving clients virtually across the U.S., with focused support in
-            Northern Virginia and the Beaufort, SC region.
+            Providing virtual divorce coaching services to clients nationwide.
           </p>
         </div>
       </section>
@@ -290,36 +276,6 @@ export default function ServicesPage() {
             professional services firms and is fully aligned with the
             expectations of attorneys who refer clients to this practice.
           </p>
-        </div>
-      </section>
-
-      <section className="bg-white px-6 pb-14 md:px-[5rem] md:pb-16">
-        <div className="mx-auto max-w-5xl">
-          <h2 className="text-center font-display text-[1.85rem] font-normal tracking-tight text-plum md:text-[2.5rem]">
-            Regional Focus
-          </h2>
-          <p className="mx-auto mt-5 max-w-3xl text-center font-body text-[1.05rem] font-light leading-[1.7] text-ink md:text-[1.1rem]">
-            While services are delivered virtually nationwide, this practice is
-            intentionally focused on:
-          </p>
-          <div className="mt-10 grid gap-6 md:grid-cols-2 md:gap-8">
-            {regions.map((region) => (
-              <article
-                key={region.name}
-                className="rounded-[2rem] bg-pink-soft px-8 py-10 text-center md:rounded-[3rem] md:px-10"
-              >
-                <h3 className="font-display text-[1.5rem] font-normal leading-snug text-plum md:text-[1.85rem]">
-                  {region.name}
-                </h3>
-                <p className="mt-1 font-label text-xs font-normal uppercase tracking-[0.6px] text-gold md:text-sm">
-                  {region.label}
-                </p>
-                <p className="mt-4 font-body text-[1rem] font-light leading-[1.65] text-ink">
-                  {region.body}
-                </p>
-              </article>
-            ))}
-          </div>
         </div>
       </section>
 
