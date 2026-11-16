@@ -201,11 +201,6 @@ export default function AboutPage() {
           <h2 className="font-display font-normal text-3xl tracking-tight text-plum md:text-4xl">
             Ready to Move Forward with Clarity?
           </h2>
-          <p className="mt-5 font-body text-base font-light leading-relaxed text-ink md:text-lg">
-            If you are navigating divorce and want structured, trauma-informed
-            support that strengthens your legal process, I invite you to begin
-            with a Discovery Session.
-          </p>
           <div className="mt-8 flex flex-wrap items-center justify-center gap-4">
             <Link
               href="/contact"

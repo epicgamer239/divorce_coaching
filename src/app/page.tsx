@@ -33,12 +33,6 @@ const services = [
   },
 ];
 
-const testimonials = [
-  "I walked into mediation feeling prepared for the first time. She helped me understand what I actually wanted — and how to ask for it.",
-  "I used to leave every attorney meeting confused. Alecia helped me get organized and advocate for myself.",
-  "She helped me think clearly when everything felt impossible.",
-];
-
 export default function Home() {
   return (
     <>
@@ -197,23 +191,6 @@ export default function Home() {
             >
               View Services
             </Link>
-          </div>
-        </div>
-      </section>
-
-      <section className="bg-white py-20 md:py-28">
-        <div className="mx-auto max-w-6xl px-6 md:px-10">
-          <h2 className="font-display font-normal text-3xl tracking-tight text-plum md:text-4xl">
-            Client Feedback
-          </h2>
-          <div className="mt-12 grid gap-10 md:grid-cols-3 md:gap-8">
-            {testimonials.map((quote) => (
-              <blockquote key={quote}>
-                <p className="text-base leading-relaxed text-ink-soft">
-                  &ldquo;{quote}&rdquo;
-                </p>
-              </blockquote>
-            ))}
           </div>
         </div>
       </section>
